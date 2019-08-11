@@ -3,14 +3,16 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const routes = require('./routes');
 
-const server = express();
+const app = express();
 
-mongoose.connect('', {
+const server = require('http').Server(app);
+
+mongoose.connect('mongodb://localhost/tindev', {
     useNewUrlParser: true
 });
 
-server.use(cors());
-server.use(express.json());
-server.use(routes);
+app.use(cors());
+app.use(express.json());
+app.use(routes);
 
 server.listen(3366);
