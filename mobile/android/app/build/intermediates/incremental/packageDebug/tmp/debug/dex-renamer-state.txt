@@ -1,0 +1,4 @@
+#Sun Aug 11 09:41:50 BRT 2019
+base.0=D\:\\WS\\Node\\tindev\\mobile\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex
